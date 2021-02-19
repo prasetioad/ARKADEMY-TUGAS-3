@@ -28,9 +28,9 @@ const size = [
 // console.log(items)
 
 // Metode splice () menambahkan / menghapus item ke / dari array, dan mengembalikan item yang dihapus.
-let ganti =items.splice(3,1,{name:'pesawat',   price: 750,});
-console.log(items)
-console.log(ganti)
+// let ganti =items.splice(3,1,{name:'pesawat',   price: 750,});
+// console.log(items)
+// console.log(ganti)
 
 // Fungsi CONCAT () menambahkan dua atau lebih ekspresi secara bersamaan.
 // let objek =  items.concat(size);
@@ -42,7 +42,7 @@ console.log(ganti)
 // console.log(items)
 
 
-let contoh= ['rujak',];
+let contoh= ['RUJAKujak',];
 // console.log(typeof(items))
 // console.log(typeof(contoh))
 
@@ -53,6 +53,6 @@ let contoh= ['rujak',];
 // console.log(besar)
 
 
-// let kecil = contoh.toLowerCase();
-// console.log(kecil)
+let kecil = contoh[0].toLowerCase();
+console.log(kecil)
 

@@ -45,12 +45,14 @@ let findPerson =((word) => {
     for(y = 0; y < word.length;y++){
         for(i = 0; i < names.length; i++){
             for(x = 0; x < names[i].length; x++){
+                let lowNames = names[i].toLowerCase();
+                let lowWord = word[y].toLowerCase();
                 if(word.length >= 2){
-                    if(names[i].charAt(x) == word[y] && names[i].charAt(x+1) == word[y+1]){
+                    if(lowNames.charAt(x) == lowWord && lowNames.charAt(x+1) ==  word[y+1]){
                         filter.push(names[i])
                     }
                 }else if(word.length === 1){
-                    if(names[i].charAt(x) == word[y]){
+                    if(lowNames.charAt(x) == word[y]){
                         filter.push(names[i])
                     }
                 }else {
